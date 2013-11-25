@@ -22,6 +22,7 @@
 		8A7AFA1B184397320042A430 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7AF9FF184397320042A430 /* CoreData.framework */; };
 		8A7AFA23184397320042A430 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AFA21184397320042A430 /* InfoPlist.strings */; };
 		8A7AFA25184397320042A430 /* WakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AFA24184397320042A430 /* WakerTests.m */; };
+		8A7AFA3818439B600042A430 /* LSImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AFA3618439B600042A430 /* LSImageUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8A7AFA20184397320042A430 /* WakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WakerTests-Info.plist"; sourceTree = "<group>"; };
 		8A7AFA22184397320042A430 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A7AFA24184397320042A430 /* WakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WakerTests.m; sourceTree = "<group>"; };
+		8A7AFA3518439B600042A430 /* LSImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSImageUtil.h; sourceTree = "<group>"; };
+		8A7AFA3618439B600042A430 /* LSImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSImageUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +118,15 @@
 		8A7AFA01184397320042A430 /* Waker */ = {
 			isa = PBXGroup;
 			children = (
+				8A7AFA3218439B600042A430 /* controllers */,
+				8A7AFA3318439B600042A430 /* models */,
+				8A7AFA3418439B600042A430 /* utils */,
+				8A7AFA3718439B600042A430 /* views */,
+				8A7AFA10184397320042A430 /* Images.xcassets */,
 				8A7AFA0A184397320042A430 /* LSAppDelegate.h */,
 				8A7AFA0B184397320042A430 /* LSAppDelegate.m */,
-				8A7AFA10184397320042A430 /* Images.xcassets */,
-				8A7AFA0D184397320042A430 /* Waker.xcdatamodeld */,
 				8A7AFA02184397320042A430 /* Supporting Files */,
+				8A7AFA0D184397320042A430 /* Waker.xcdatamodeld */,
 			);
 			path = Waker;
 			sourceTree = "<group>";
@@ -151,6 +158,36 @@
 				8A7AFA21184397320042A430 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A7AFA3218439B600042A430 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		8A7AFA3318439B600042A430 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		8A7AFA3418439B600042A430 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AFA3518439B600042A430 /* LSImageUtil.h */,
+				8A7AFA3618439B600042A430 /* LSImageUtil.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		8A7AFA3718439B600042A430 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7AFA3818439B600042A430 /* LSImageUtil.m in Sources */,
 				8A7AFA0F184397320042A430 /* Waker.xcdatamodeld in Sources */,
 				8A7AFA08184397320042A430 /* main.m in Sources */,
 				8A7AFA0C184397320042A430 /* LSAppDelegate.m in Sources */,
@@ -452,6 +490,7 @@
 				8A7AFA2A184397320042A430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A7AFA2B184397320042A430 /* Build configuration list for PBXNativeTarget "WakerTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +499,7 @@
 				8A7AFA2D184397320042A430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
